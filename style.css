@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+body{
+    background-color: #2d3548;
+    color: #fff;
+}
+.container{
+    display: flex;
+    width: 90%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+}
+.card-bg{
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+text{
+    position: absolute;
+    left: 0;
+    padding: 25px;
+}
+.card-categories{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-transform:uppercase
+}
+.card-heading{
+font-size: 1.8rem;
+text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+text-align: center;
+padding-top: 15px;
+color: rgb(255, 255, 255);
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.container:hover >.card:not(:hover) .card-bg{
+    filter: brightness(0.5) blur(10px);
+    
+}
